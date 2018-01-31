@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "CancelaResponse", propOrder = {
     "ack",
     "text",
-    "uuids"
+    "item"
 })
 public class CancelaResponse {
 
@@ -43,7 +43,8 @@ public class CancelaResponse {
     protected String text;
 
     @XmlElement(required = true, nillable = true)
-    protected String[] uuids;
+    ArrayOfXsdString uuids;
+    //protected String[] uuids;
 
     /**
      * Gets the value of the ack property.
@@ -99,16 +100,18 @@ public class CancelaResponse {
      * @return
      *     possible object is
      *     {@link ArrayOfXsdString }
-     *     
-
+     *
+     */
     public ArrayOfXsdString getUuids() {
         return uuids;
     }
-     */
 
+
+    /*
     public String[] getUuids() {
         return uuids;
     }
+    */
 
     /**
      * Sets the value of the uuids property.
@@ -117,14 +120,16 @@ public class CancelaResponse {
      *     allowed object is
      *     {@link ArrayOfXsdString }
      *     
-
+    */
     public void setUuids(ArrayOfXsdString value) {
         this.uuids = value;
     }
-     */
 
+
+    /*
     public void setUuids(String[] value) {
         this.uuids = value;
     }
+    */
 
 }

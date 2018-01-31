@@ -1,5 +1,5 @@
 group 'sx.cfdi.providers'
-version '1.0.3'
+version '1.0.4'
 description = """
         Libreria Groovy/Java con clases requeridas para accesar los servicios de timbrado de CEPDI
     """
